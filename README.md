@@ -20,3 +20,7 @@ config:
 mvn clean package -Dmaven.test.skip=true
 ## Test
 curl -v http://localhost:9080/echo-provider
+## Docker
+docker build -t nacos-provider-demo:v1 . 
+
+docker run -d -e "NACOS_SERVER=${NACOS_SERVER}" -p 9080:9080 nacos-provider-demo:v1
