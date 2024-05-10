@@ -10,9 +10,11 @@ Login the console of MSE Nacos, then create config:
 
 **Content**:
 
+```yaml
 config:
-
   content: this is a nacos config demo
+```
+
 
 ## RUN
 mvn clean package -Dmaven.test.skip=true
